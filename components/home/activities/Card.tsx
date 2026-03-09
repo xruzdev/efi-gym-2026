@@ -52,7 +52,10 @@ const Card = ({ activity, index }: props) => {
           end: "bottom 40%",
           toggleActions: "play none none reverse",
         },
-        clipPath: index === 4 ? "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)" : "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+        clipPath:
+          index === 4
+            ? "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"
+            : "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
         duration: 1,
 
         delay: index * 0.1,
@@ -63,7 +66,8 @@ const Card = ({ activity, index }: props) => {
   return (
     <div
       ref={cardRef}
-      
+      onClick={() => {}}
+      tabIndex={0}
       className="card group h-30 hover:h-90 md:hover:h-150 w-full grayscale hover:grayscale-0 lg:[clip-path:polygon(0%_100%,100%_100%,100%_100%,0%_100%)] 
       md:h-50 bg-slate-600 rounded overflow-hidden duration-1000 ease-out relative lg:w-auto lg:flex-1 lg:h-150 lg:hover:h-150 lg:hover:flex-4 2xl:h-175 2xl:hover:h-175"
     >

@@ -152,7 +152,7 @@ export const Contact = () => {
                     Correo Electrónico
                   </h4>
 
-                  <p className="text-zinc-400 font-text">efigym@gmail.com</p>
+                  <p className="text-zinc-400 font-text">gimnasioefi@hotmail.com</p>
                 </Copy>
               </div>
             </div>
@@ -181,10 +181,10 @@ export const Contact = () => {
                     Horarios
                   </h4>
                   <p className="text-zinc-400 font-text">
-                    Lunes a Viernes: 06:00 - 23:00
+                    Lunes a Viernes: 07:00 - 22:00
                   </p>
                   <p className="text-zinc-400 font-text">
-                    Sábados: 08:00 - 20:00
+                    Sábados: 09:00 - 13:00
                   </p>
                 </Copy>
               </div>
