@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+* {
+  --efi-red: #e51734;
+}
+
+@font-face {
+  font-family: "Redig Regular";
+  src: url("../lib/fonts/Redig-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@theme {
+  /* Fonts */
+  --font-header: "Redig Regular", sans-serif;
+  --font-text: var(--font-monserrat);
+  /* Colors */
+  --color-efi-red: var(--efi-red);
+
+  /* Animations */
+  --animate-pulse-fast: pulse 500ms cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-card:
+    height 1s cubic-bezier(0.4, 0, 0.6, 1), flex 1s cubic-bezier(0.4, 0, 0.6, 1);
+  --animate-gradient-x: gradient-x 4s ease-in-out infinite;
+  --animate-fade: fade 3s ease-in-out;
+  --animate-fade-2: fade 1.5s ease-in-out;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  /* Quitamos cualquier animación predeterminada de la API */
+  animation: none;
+  /* Evitamos que los fondos resalten extraños mientras se cruzan */
+  mix-blend-mode: normal;
+  display: block;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes gradient-x {
+  0%,
+  100% {
+    background-size: 200% 200%;
+    background-position: left center;
+  }
+  50% {
+    background-size: 200% 200%;
+    background-position: right center;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
+
+h1 {
+  @apply font-header  tracking-wide;
+}
+
+body::-webkit-scrollbar {
+  width: 5px; /* ancho de toda la barra de desplazamiento */
+}
+body::-webkit-scrollbar-track {
+  background: #0a0a0a; /* color del área de seguimiento */
+}
+body::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 2px; /* redondez del deslizador */
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 10px !important;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: black !important; /* color del área de seguimiento */
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: #ec0830 !important; /* color del deslizador */
+  border-radius: 20px !important; /* redondez del deslizador */
+}
+
+
+/* Custom Scrollbar para el Modal de Horarios (y otros donde uses la clase) */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px; /* Ancho de la barra vertical */
+  height: 8px; /* Alto de la barra horizontal (si hubiera) */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(23, 23, 23, 0.5); /* Color de fondo oscuro (neutral-900) */
+  border-radius: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(82, 82, 82, 0.8); /* Color del "pulgar" gris intermedio (neutral-600) */
+  border-radius: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(163, 163, 163, 1); /* Color al hacer hover (neutral-400) */
+}
+
+/* Soporte para Firefox (usa un estándar más limitado pero funcional) */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(82, 82, 82, 0.8) rgba(23, 23, 23, 0.5);
+}
