@@ -4,7 +4,14 @@ import { gsap, useGSAP } from "@/lib/gsap";
 import Image from "next/image";
 import { useRef } from "react";
 
-export default function Slider({ images }: { images: string[] }) {
+export default function Slider({
+  images,
+  label,
+}: {
+  images: string[];
+  /** Nombre del servicio, usado para describir las imágenes (alt). */
+  label?: string;
+}) {
   const sliderRef = useRef<HTMLDivElement>(null);
   const currentIndex = useRef(0);
 
@@ -108,11 +115,15 @@ export default function Slider({ images }: { images: string[] }) {
       {images.map((imgSrc, index) => (
         <Image
           key={index}
-          sizes="(max-width: 1280px) 100vw, 70vw"
+          sizes="(max-width: 1024px) 90vw, 40vw"
           priority={index === 0}
           fill
           src={imgSrc}
-          alt={`Slide ${index}`}
+          alt={
+            label
+              ? `${label} en EFI Gym - imagen ${index + 1}`
+              : `EFI Gym - imagen ${index + 1}`
+          }
           className="absolute inset-0 size-full object-cover block"
         />
       ))}

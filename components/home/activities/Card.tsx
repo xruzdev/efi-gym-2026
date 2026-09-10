@@ -74,6 +74,7 @@ const Card = ({ activity, index }: props) => {
       <Image
         src={src}
         fill
+        sizes="(max-width: 1024px) 100vw, 40vw"
         alt={`Imagen de la actividad ${title}`}
         className="absolute top-0 left-0 object-cover object-center  brightness-50  group-hover:brightness-80 "
       />

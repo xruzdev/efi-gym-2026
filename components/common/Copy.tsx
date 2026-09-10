@@ -44,6 +44,10 @@ export default function Copy({
           type: "lines",
           mask: "lines",
           linesClass: "line++",
+          // Por defecto SplitText pone aria-label en el elemento partido y
+          // aria-hidden en cada línea. En <p>/<div> (sin rol) aria-label es un
+          // atributo prohibido; con "none" el texto queda accesible tal cual.
+          aria: "none",
         });
 
         splitRef.current.push(split);

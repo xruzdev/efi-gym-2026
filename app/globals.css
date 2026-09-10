@@ -4,17 +4,11 @@
   --efi-red: #e51734;
 }
 
-@font-face {
-  font-family: "Redig Regular";
-  src: url("../lib/fonts/Redig-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
 @theme {
   /* Fonts */
-  --font-header: "Redig Regular", sans-serif;
-  --font-text: var(--font-monserrat);
+  /* Las fuentes las define next/font en lib/fonts.ts (ver CLS / font-display). */
+  --font-header: var(--font-redig), Arial, sans-serif;
+  --font-text: var(--font-montserrat), system-ui, sans-serif;
   /* Colors */
   --color-efi-red: var(--efi-red);
 

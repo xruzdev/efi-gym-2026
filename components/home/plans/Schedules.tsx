@@ -115,7 +115,7 @@ export default function Schedules() {
         <FaCalendarAlt className="text-xl" />
         Ver Horarios
       </button>
-      {/* Modal Overlay */}(
+      {/* Modal Overlay */}
       <div
         style={{
           opacity: isOpen ? 1 : 0,
@@ -246,7 +246,7 @@ export default function Schedules() {
           </div>
         </div>
       </div>
-      )
+      
     </>
   );
 }

@@ -10,10 +10,13 @@ export const SectionHeader = ({
   title,
   resaltedTitle,
   subtitle,
+  as: Heading = "h2",
 }: {
   title: string;
   resaltedTitle?: string;
   subtitle?: string;
+  /** Nivel de encabezado. Usar "h1" cuando este es el título principal de la página. */
+  as?: "h1" | "h2";
 }) => {
   const headerRef = useRef<HTMLDivElement>(null);
 
@@ -57,7 +60,7 @@ export const SectionHeader = ({
 
   return (
     <div ref={headerRef}>
-      <h2 className=" text-7xl md:text-[5rem] overflow-hidden w-fit mx-auto   lg:text-[5.3rem] xl:text-[6.5rem] leading-15 pb-4 pr-4  text-white uppercase tracking-wide 2xl:text-8xl font-header   text-center md:mb-4 ">
+      <Heading className=" text-7xl md:text-[5rem] overflow-hidden w-fit mx-auto   lg:text-[5.3rem] xl:text-[6.5rem] leading-15 pb-4 pr-4  text-white uppercase tracking-wide 2xl:text-8xl font-header   text-center md:mb-4 ">
         <span className="title translate inline-block -translate-x-[120%]">
           {title}
         </span>
@@ -67,7 +70,7 @@ export const SectionHeader = ({
           </span>
           <div className="rt-bg scale-x-0 origin-left absolute -bottom-2 md:-bottom-2.5  lg:-bottom-3  left-1/2 -translate-x-1/2  w-[105%] h-full bg-efi-red rounded -z-10 "></div>
         </div>
-      </h2>
+      </Heading>
 
       {subtitle && (
         <Copy>

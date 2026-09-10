@@ -10,10 +10,10 @@ export const footerLinks = [
         title: "Quienes Somos",
         href: "/quienes-somos",
       },
-      {
+   /*    {
         title: "Capacitaciones",
         href: "/capacitaciones",
-      },
+      }, */
     ],
   },
   {
@@ -28,8 +28,8 @@ export const footerLinks = [
         href: "mailto:gimnasioefi@gmail.com",
       },
       {
-        title: "Telefono",
-        href: "tel:+5492915049564",
+        title: "WhatsApp",
+        href: "https://wa.me/5492915049564",
       },
       {
         title: "Ubicacion",

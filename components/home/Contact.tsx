@@ -1,8 +1,20 @@
 "use client";
 import { gsap, useGSAP } from "@/lib/gsap";
 import { useRef } from "react";
+import Link from "next/link";
+import { FaWhatsapp } from "react-icons/fa";
 import Copy from "../common/Copy";
 import { SectionHeader } from "../common/SectionHeader";
+import { BUSINESS } from "@/lib/seo";
+
+/** Cada dato de contacto es un enlace: toda la fila es un target tocable. */
+const itemClass =
+  "flex items-start gap-4 -m-2 p-2 rounded-xl group transition-colors hover:bg-white/5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-efi-red";
+
+const iconClass =
+  "icon opacity-0 translate-y-20 bg-efi-red/10 p-3 rounded-xl text-efi-red transition-colors group-hover:bg-efi-red/20";
+
+const labelClass = "font-header tracking-wide text-lg lg:text-2xl uppercase";
 
 export const Contact = () => {
   const contactRef = useRef<HTMLDivElement>(null);
@@ -69,8 +81,13 @@ export const Contact = () => {
 
           <div className="space-y-6 relative z-10">
             {/* Address */}
-            <div className="flex items-start gap-4">
-              <div className="icon opacity-0 translate-y-20 bg-efi-red/10 p-3 rounded-xl text-efi-red">
+            <Link
+              href={BUSINESS.maps}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={itemClass}
+            >
+              <div className={iconClass}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -81,6 +98,7 @@ export const Contact = () => {
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
+                  aria-hidden="true"
                 >
                   <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
                   <circle cx="12" cy="10" r="3" />
@@ -88,49 +106,42 @@ export const Contact = () => {
               </div>
               <div>
                 <Copy>
-                  <h4 className="font-header tracking-wide text-lg lg:text-2xl uppercase">
-                    Dirección
-                  </h4>
+                  <h4 className={labelClass}>Dirección</h4>
                   <p className="text-zinc-400 font-text">
-                    Jorge Waish 31, Bahía Blanca
+                    {BUSINESS.street}, {BUSINESS.city}
                     <br />
-                    Buenos Aires, CP 8000
+                    {BUSINESS.region}, CP {BUSINESS.postalCode}
                   </p>
                 </Copy>
               </div>
-            </div>
+            </Link>
 
-            {/* Phone */}
-            <div className="flex items-start gap-4">
-              <div className="icon opacity-0 translate-y-20 bg-efi-red/10 p-3 rounded-xl text-efi-red">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-                </svg>
+            {/* WhatsApp */}
+            <Link
+              href={BUSINESS.whatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={itemClass}
+            >
+              <div className={iconClass}>
+                <FaWhatsapp className="size-6" aria-hidden="true" />
               </div>
               <div>
                 <Copy>
-                  <h4 className="font-header tracking-wide text-lg lg:text-2xl  uppercase">
-                    Teléfono
-                  </h4>
-
-                  <p className="text-zinc-400 font-text">+54 9 2915 04-9564</p>
+                  <h4 className={labelClass}>WhatsApp</h4>
+                  <p className="text-zinc-400 font-text">
+                    {BUSINESS.phoneDisplay}
+                  </p>
+                  <p className="text-zinc-400 font-text">
+                    Consultá precios y planes.
+                  </p>
                 </Copy>
               </div>
-            </div>
+            </Link>
 
             {/* Email */}
-            <div className="flex items-start gap-4">
-              <div className="icon opacity-0 translate-y-20 bg-efi-red/10 p-3 rounded-xl text-efi-red">
+            <Link href={`mailto:${BUSINESS.email}`} className={itemClass}>
+              <div className={iconClass}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -141,6 +152,7 @@ export const Contact = () => {
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
+                  aria-hidden="true"
                 >
                   <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
                   <path d="m22 6-10 7L2 6" />
@@ -148,14 +160,11 @@ export const Contact = () => {
               </div>
               <div>
                 <Copy>
-                  <h4 className="font-header tracking-wide text-lg lg:text-2xl  uppercase">
-                    Correo Electrónico
-                  </h4>
-
-                  <p className="text-zinc-400 font-text">gimnasioefi@hotmail.com</p>
+                  <h4 className={labelClass}>Correo Electrónico</h4>
+                  <p className="text-zinc-400 font-text">{BUSINESS.email}</p>
                 </Copy>
               </div>
-            </div>
+            </Link>
 
             {/* Working Hours */}
             <div className="flex items-start gap-4">
@@ -170,6 +179,7 @@ export const Contact = () => {
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
+                  aria-hidden="true"
                 >
                   <circle cx="12" cy="12" r="10" />
                   <path d="M12 6v6l4 2" />
@@ -177,9 +187,7 @@ export const Contact = () => {
               </div>
               <div>
                 <Copy>
-                  <h4 className="font-header tracking-wide text-lg lg:text-2xl  uppercase">
-                    Horarios
-                  </h4>
+                  <h4 className={labelClass}>Horarios</h4>
                   <p className="text-zinc-400 font-text">
                     Lunes a Viernes: 07:00 - 22:00
                   </p>

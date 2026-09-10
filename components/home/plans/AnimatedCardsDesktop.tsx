@@ -234,7 +234,7 @@ export default function AnimatedCards() {
             {/* Espacio para la imagen 3D (puedes reemplazar esto con una etiqueta <img /> o componente <Image /> de Next.js) */}
             <div className="grow flex items-center justify-center pointer-events-none">
               <div className="w-30 h-30  relative  group-hover:scale-110 transition-transform duration-300   rounded-full flex items-center justify-center" >
-                 <Image src={card.icon} alt={card.title}  fill className="z-1 " />
+                 <Image src={card.icon} alt={card.title} fill sizes="120px" className="z-1 " />
 
                  <div className="bg-white absolute top-1/2 left-1/2  -translate-x-1/2 -translate-y-1/2 w-30 h-30 rounded-4xl group-hover:bg-efi-red transition-colors duration-300   z-0"></div>
               </div>

@@ -1,29 +1,45 @@
+import type { Metadata } from "next";
 import { Section } from "@/components/about/Section";
+import { JsonLd } from "@/components/common/JsonLd";
+import { breadcrumbSchema } from "@/lib/schema";
+import { OG_IMAGE } from "@/lib/seo";
 
+const title = "Quiénes Somos";
+const description =
+  "Conocé la historia, el equipo y las instalaciones de EFI Gym en Bahía Blanca: musculación, funcional, alto rendimiento, nutrición y kinesiología.";
 
-export const metadata = {
-  title: "Quiénes Somos - EFI Gym",
-  description: "Conoce la historia, misión y valores de EFI Gym. Somos un gimnasio comprometido con tu bienestar y transformación física. Descubre por qué somos la mejor opción para alcanzar tus objetivos de fitness.",
-  
+export const metadata: Metadata = {
+  title,
+  description,
+  alternates: {
+    canonical: "/quienes-somos",
+  },
   openGraph: {
-    title: "Quiénes Somos - EFI Gym",
-    description: "Conoce la historia, misión y valores de EFI Gym. Somos un gimnasio comprometido con tu bienestar y transformación física. Descubre por qué somos la mejor opción para alcanzar tus objetivos de fitness.",
-    url: "https://www.efigym.com/quienes-somos",
-    siteName: "EFI Gym",
-    images: [
-      {
-        url: "https://www.efigym.com/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "EFI Gym - Quiénes Somos",
-      },
-    ],
-    locale: "es_AR",
+    title: `${title} | EFI Gym`,
+    description,
+    url: "/quienes-somos",
     type: "website",
+    locale: "es_AR",
+    images: [{ ...OG_IMAGE, alt: "EFI Gym - Quiénes Somos" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${title} | EFI Gym`,
+    description,
+    images: [OG_IMAGE.url],
   },
 };
 
-
 export default function QuienesSomosPage() {
-  return <Section />;
+  return (
+    <>
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: "Inicio", path: "/" },
+          { name: "Quiénes Somos", path: "/quienes-somos" },
+        ])}
+      />
+      <Section />
+    </>
+  );
 }

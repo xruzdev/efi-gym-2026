@@ -136,6 +136,7 @@ export default function AnimatedCardsMobile() {
                 src={card.icon}
                 alt={card.title}
                 fill
+                sizes="(max-width: 640px) 64px, 80px"
                 className="z-10 object-contain p-2"
               />
             </div>

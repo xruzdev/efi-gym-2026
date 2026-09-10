@@ -1,31 +1,32 @@
+import type { Metadata } from "next";
 import { SectionHeader } from "@/components/common/SectionHeader";
 
-export const metadata = {
-  title: "Capacitaciones - EFI Gym",
-  description: "Próximamente más información sobre nuestras capacitaciones. Mantente atento para descubrir cómo podemos ayudarte a alcanzar tus objetivos de fitness con nuestros programas de entrenamiento personalizados y online.",
-  
-  openGraph: {
-    title: "Capacitaciones - EFI Gym",
-    description: "Próximamente más información sobre nuestras capacitaciones. Mantente atento para descubrir cómo podemos ayudarte a alcanzar tus objetivos de fitness con nuestros programas de entrenamiento personalizados y online.",
-    url: "https://www.efigym.com/capacitaciones",
-    siteName: "EFI Gym",
-    images: [
-      {
-        url: "https://www.efigym.com/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "EFI Gym - Capacitaciones",
-      },
-    ],
-    locale: "es_AR",
-    type: "website",
+const title = "Capacitaciones";
+const description =
+  "Próximamente vas a encontrar acá la información sobre las capacitaciones y cursos de EFI Gym en Bahía Blanca.";
+
+export const metadata: Metadata = {
+  title,
+  description,
+  alternates: {
+    canonical: "/capacitaciones",
+  },
+  // Página placeholder sin contenido real: se excluye del índice y del sitemap
+  // para no sumar "thin content". Quitar este bloque al publicar el contenido.
+  robots: {
+    index: false,
+    follow: true,
   },
 };
 
 export default function CapacitacionesPage() {
   return (
     <div className="h-[95vh] flex flex-col items-center justify-center">
-       <SectionHeader title="Proximamente" resaltedTitle="Más Informacion" />
+      <SectionHeader
+        as="h1"
+        title="Proximamente"
+        resaltedTitle="Más Informacion"
+      />
     </div>
   );
 }

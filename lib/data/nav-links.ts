@@ -41,11 +41,11 @@ export const links: NavLink[] = [
     ],
   },
 
-  {
+  /* {
     href: "/capacitaciones",
     title: "Capacitaciones",
     sublinks: [],
-  },
+  }, */
 
   {
     href: "/quienes-somos",

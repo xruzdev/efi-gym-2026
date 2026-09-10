@@ -101,7 +101,7 @@ export const Card = ({ title, text, profesional, images }: CardProps) => {
       <div className="flex flex-col lg:flex-row lg:gap-10 xl:gap-16 items-start bg-neutral-950 rounded p-6 lg:p-10 xl:p-16">
         {images.length > 0 && (
           <div className="mb-4 aspect-3/4 md:aspect-square xl:aspect-4/3 w-full lg:flex-1 relative">
-            <Slider images={images} />
+            <Slider images={images} label={title} />
           </div>
         )}
         <div className="flex flex-col w-full lg:flex-1">
@@ -140,7 +140,7 @@ export const Card = ({ title, text, profesional, images }: CardProps) => {
               key={index}
               fill
               src={image}
-              alt={`Imagen ${index + 1}`}
+              alt={`${title} en EFI Gym - imagen ${index + 1}`}
               className="w-full object-cover h-auto mb-2 rounded"
             />
           ))}
@@ -181,7 +181,7 @@ export const Card = ({ title, text, profesional, images }: CardProps) => {
                 key={index}
                 fill
                 src={image}
-                alt={`Imagen ${index + 1}`}
+                alt={`${title} en EFI Gym - imagen ${index + 1}`}
                 className="w-full object-cover h-auto mb-2 rounded"
               />
             ))}

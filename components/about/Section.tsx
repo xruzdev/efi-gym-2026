@@ -59,13 +59,15 @@ export const Section = () => {
       <div className="relative w-full h-[60vh]">
         <Image
           fill
+          priority
+          sizes="100vw"
           src="/sala-de-musculacion.webp"
-          alt="Quienes Somos"
+          alt="Sala de musculación de EFI Gym en Bahía Blanca"
           className="object-cover object-center grayscale brightness-50"
         />
 
         <div className="absolute inset-0 flex items-center justify-center z-50">
-          <SectionHeader title="Sobre" resaltedTitle="EFI" />
+          <SectionHeader as="h1" title="Sobre" resaltedTitle="EFI" />
         </div>
         <div className="absolute bottom-0 w-full h-60 bg-linear-to-t from-neutral-950 to-transparent z-10" />
       </div>
@@ -95,8 +97,9 @@ export const Section = () => {
               >
                 <Image
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1536px) 45vw, 35vw"
                   src={`/about/${index + 1}.webp`}
-                  alt="Imagen del gimnasio"
+                  alt={`Instalaciones de EFI Gym en Bahía Blanca - foto ${index + 1}`}
                   className="object-cover object-center"
                 />
 

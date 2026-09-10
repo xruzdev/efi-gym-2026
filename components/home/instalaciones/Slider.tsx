@@ -2,6 +2,7 @@
 
 import { gsap, useGSAP } from "@/lib/gsap";
 import Image from "next/image";
+import { CONTENT_WIDTH_SIZES } from "@/lib/image-sizes";
 import { useRef } from "react";
 
 interface props {
@@ -158,7 +159,7 @@ export default function Slider({ images }: props) {
       {images.map((image, index) => (
         <Image
           key={index}
-          sizes="(max-width: 1280px) 100vw, 70vw"
+          sizes={CONTENT_WIDTH_SIZES}
           priority={index === 0}
           fill
           src={image.src}

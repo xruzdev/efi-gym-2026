@@ -115,7 +115,7 @@ export default function Slider({ images, delay = 6 }: { images: string[], delay?
           priority={index === 0}
           fill
           src={imgSrc}
-          alt={`Slide ${index}`}
+          alt={`Entrenamiento en EFI Gym, gimnasio en Bahía Blanca - imagen ${index + 1}`}
           className="absolute inset-0 size-full object-cover block"
         />
       ))}
