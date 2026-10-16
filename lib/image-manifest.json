@@ -1,0 +1,495 @@
+{
+  "/about/1.webp": {
+    "base": "/_img/about_1.1f200e34",
+    "widths": [
+      64,
+      128,
+      256,
+      384,
+      640,
+      828,
+      960
+    ],
+    "width": 960,
+    "height": 1280
+  },
+  "/about/2.webp": {
+    "base": "/_img/about_2.24bc7ca8",
+    "widths": [
+      64,
+      128,
+      256,
+      384,
+      640,
+      828,
+      960
+    ],
+    "width": 960,
+    "height": 1280
+  },
+  "/about/3.webp": {
+    "base": "/_img/about_3.dd913ba8",
+    "widths": [
+      64,
+      128,
+      256,
+      384,
+      640,
+      800
+    ],
+    "width": 800,
+    "height": 1065
+  },
+  "/actividades/cardio.jpg": {
+    "base": "/_img/actividades_cardio.b60529b3",
+    "widths": [
+      64,
+      128,
+      256,
+      384,
+      640,
+      828,
+      1080
+    ],
+    "width": 1080,
+    "height": 1350
+  },
+  "/actividades/funcional.jpg": {
+    "base": "/_img/actividades_funcional.6072165e",
+    "widths": [
+      64,
+      128,
+      256,
+      384,
+      640,
+      828,
+      1080
+    ],
+    "width": 1080,
+    "height": 1350
+  },
+  "/actividades/gap.jpg": {
+    "base": "/_img/actividades_gap.970025ea",
+    "widths": [
+      64,
+      128,
+      256,
+      384,
+      640,
+      808
+    ],
+    "width": 808,
+    "height": 1350
+  },
+  "/actividades/zumba.jpg": {
+    "base": "/_img/actividades_zumba.3e84977c",
+    "widths": [
+      64,
+      128,
+      256,
+      384,
+      640,
+      828,
+      1080,
+      1280,
+      1600,
+      1920,
+      2160
+    ],
+    "width": 2160,
+    "height": 3840
+  },
+  "/efi-cross-2.webp": {
+    "base": "/_img/efi-cross-2.e096bb50",
+    "widths": [
+      64,
+      128,
+      256,
+      384,
+      640,
+      800
+    ],
+    "width": 800,
+    "height": 1065
+  },
+  "/efi-cross.webp": {
+    "base": "/_img/efi-cross.763406ed",
+    "widths": [
+      64,
+      128,
+      256,
+      384,
+      640,
+      828,
+      1080,
+      1280
+    ],
+    "width": 1280,
+    "height": 854
+  },
+  "/funcional-cross.webp": {
+    "base": "/_img/funcional-cross.bc843244",
+    "widths": [
+      64,
+      128,
+      256,
+      384,
+      640,
+      828,
+      960
+    ],
+    "width": 960,
+    "height": 1280
+  },
+  "/gym.webp": {
+    "base": "/_img/gym.3d729455",
+    "widths": [
+      64,
+      128,
+      256,
+      384,
+      640,
+      828,
+      1080,
+      1280,
+      1600,
+      1900
+    ],
+    "width": 1900,
+    "height": 1069
+  },
+  "/hero/hero-1.jpg": {
+    "base": "/_img/hero_hero-1.d53472d7",
+    "widths": [
+      64,
+      128,
+      256,
+      384,
+      640,
+      828,
+      1036
+    ],
+    "width": 1036,
+    "height": 1555
+  },
+  "/hero/hero-2.jpg": {
+    "base": "/_img/hero_hero-2.50e9ba9f",
+    "widths": [
+      64,
+      128,
+      256,
+      384,
+      640,
+      828,
+      1036
+    ],
+    "width": 1036,
+    "height": 1555
+  },
+  "/hero/hero-3.jpg": {
+    "base": "/_img/hero_hero-3.46c6f52e",
+    "widths": [
+      64,
+      128,
+      256,
+      384,
+      640,
+      828,
+      1036
+    ],
+    "width": 1036,
+    "height": 1555
+  },
+  "/hero/hero-4.jpg": {
+    "base": "/_img/hero_hero-4.8b020f52",
+    "widths": [
+      64,
+      128,
+      256,
+      384,
+      640,
+      828,
+      1036
+    ],
+    "width": 1036,
+    "height": 1555
+  },
+  "/hero/hero-5.jpg": {
+    "base": "/_img/hero_hero-5.33bc7297",
+    "widths": [
+      64,
+      128,
+      256,
+      384,
+      640,
+      828,
+      1036
+    ],
+    "width": 1036,
+    "height": 1555
+  },
+  "/hero/hero-6.jpg": {
+    "base": "/_img/hero_hero-6.d33a7fa5",
+    "widths": [
+      64,
+      128,
+      256,
+      384,
+      640,
+      828,
+      1036
+    ],
+    "width": 1036,
+    "height": 1555
+  },
+  "/hero/hero-7.jpg": {
+    "base": "/_img/hero_hero-7.79048b41",
+    "widths": [
+      64,
+      128,
+      256,
+      384,
+      640,
+      828,
+      1036
+    ],
+    "width": 1036,
+    "height": 1555
+  },
+  "/hero/hero-8.jpg": {
+    "base": "/_img/hero_hero-8.41d1d365",
+    "widths": [
+      64,
+      128,
+      256,
+      384,
+      640,
+      828,
+      1036
+    ],
+    "width": 1036,
+    "height": 1555
+  },
+  "/icons/grupal1.png": {
+    "base": "/_img/icons_grupal1.cc643995",
+    "widths": [
+      64,
+      128,
+      256,
+      384,
+      512
+    ],
+    "width": 512,
+    "height": 512
+  },
+  "/icons/musculacion1.png": {
+    "base": "/_img/icons_musculacion1.e51d81cc",
+    "widths": [
+      64,
+      128,
+      256,
+      384,
+      512
+    ],
+    "width": 512,
+    "height": 512
+  },
+  "/icons/packs.png": {
+    "base": "/_img/icons_packs.a5c0c52f",
+    "widths": [
+      64,
+      128,
+      256,
+      384,
+      512
+    ],
+    "width": 512,
+    "height": 512
+  },
+  "/logoflex.webp": {
+    "base": "/_img/logoflex.02915c72",
+    "widths": [
+      64,
+      128,
+      256,
+      384,
+      640,
+      828,
+      1080,
+      1280,
+      1600,
+      1877
+    ],
+    "width": 1877,
+    "height": 1884
+  },
+  "/musculacion.webp": {
+    "base": "/_img/musculacion.cfbf3687",
+    "widths": [
+      64,
+      128,
+      256,
+      384,
+      640,
+      828,
+      960
+    ],
+    "width": 960,
+    "height": 1280
+  },
+  "/patio-collage.webp": {
+    "base": "/_img/patio-collage.4e7a6609",
+    "widths": [
+      64,
+      128,
+      256,
+      384,
+      640,
+      828,
+      1080,
+      1280,
+      1600,
+      1728
+    ],
+    "width": 1728,
+    "height": 972
+  },
+  "/patio.webp": {
+    "base": "/_img/patio.e08a49d6",
+    "widths": [
+      64,
+      128,
+      256,
+      384,
+      640,
+      828,
+      1080,
+      1280
+    ],
+    "width": 1280,
+    "height": 854
+  },
+  "/sala-cardio.webp": {
+    "base": "/_img/sala-cardio.5f2ce0af",
+    "widths": [
+      64,
+      128,
+      256,
+      384,
+      640,
+      828,
+      1080,
+      1280
+    ],
+    "width": 1280,
+    "height": 854
+  },
+  "/sala-de-musculacion.webp": {
+    "base": "/_img/sala-de-musculacion.c9ef87e8",
+    "widths": [
+      64,
+      128,
+      256,
+      384,
+      640,
+      828,
+      1080,
+      1280,
+      1600,
+      1920
+    ],
+    "width": 1920,
+    "height": 1080
+  },
+  "/servicios/kine-1.webp": {
+    "base": "/_img/servicios_kine-1.506a192b",
+    "widths": [
+      64,
+      128,
+      256,
+      384,
+      640,
+      800
+    ],
+    "width": 800,
+    "height": 1065
+  },
+  "/servicios/kine-2.webp": {
+    "base": "/_img/servicios_kine-2.014168c2",
+    "widths": [
+      64,
+      128,
+      256,
+      384,
+      640,
+      800
+    ],
+    "width": 800,
+    "height": 1065
+  },
+  "/servicios/nutri-1.webp": {
+    "base": "/_img/servicios_nutri-1.2038f732",
+    "widths": [
+      64,
+      128,
+      256,
+      384,
+      640,
+      800
+    ],
+    "width": 800,
+    "height": 1065
+  },
+  "/servicios/nutri-2.webp": {
+    "base": "/_img/servicios_nutri-2.aa59ac11",
+    "widths": [
+      64,
+      128,
+      256,
+      384,
+      640,
+      800
+    ],
+    "width": 800,
+    "height": 1065
+  },
+  "/servicios/nutri-3.webp": {
+    "base": "/_img/servicios_nutri-3.cee7d0db",
+    "widths": [
+      64,
+      128,
+      256,
+      384,
+      640,
+      800
+    ],
+    "width": 800,
+    "height": 1065
+  },
+  "/servicios/nutri-4.webp": {
+    "base": "/_img/servicios_nutri-4.ef27c1ce",
+    "widths": [
+      64,
+      128,
+      256,
+      384,
+      640,
+      800
+    ],
+    "width": 800,
+    "height": 1065
+  },
+  "/streching.webp": {
+    "base": "/_img/streching.aa97e0a4",
+    "widths": [
+      64,
+      128,
+      256,
+      384,
+      640,
+      800
+    ],
+    "width": 800,
+    "height": 1065
+  }
+}

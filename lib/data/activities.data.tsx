@@ -11,19 +11,19 @@ import { Activity } from "../interfaces/activity.interface";
 
 export const activities: Activity[] = [
   {
-    src: "https://res.cloudinary.com/dqbpjov4y/image/upload/f_auto,q_auto/v1723823296/funcional_ims5lz.jpg",
+    src: "/actividades/funcional.jpg",
     title: "Funcional",
     text: "Entrenamiento dinámico, multiarticular, que trabaja fuerza, resistencia, coordinación y movilidad. Ideal para mejorar el rendimiento general y moverte mejor en el día a día.",
     icon: <FunctionalIcon color="white" size="60px" />,
   },
   {
-    src: "https://res.cloudinary.com/dqbpjov4y/image/upload/f_auto,q_auto/v1723823302/gap_xjqozm.jpg",
+    src: "/actividades/gap.jpg",
     title: "GAP",
     text: "Clase enfocada en glúteos, abdominales y piernas. Trabajo localizado, intenso y efectivo para fortalecer y tonificar el tren inferior.",
     icon: <GapIcon color="white" size="60px" />,
   },
   {
-    src: "https://res.cloudinary.com/dqbpjov4y/image/upload/f_auto,q_auto/v1723823298/cardio_oib3gr.jpg",
+    src: "/actividades/cardio.jpg",
     title: "Cardio",
     text: "Entrenamiento orientado a mejorar la capacidad cardiovascular y la resistencia. Clases activas, continuas y adaptables a todos los niveles.",
     icon: <CardioIcon color="white" size="60px" />,
@@ -35,7 +35,7 @@ export const activities: Activity[] = [
     icon: <CrossIcon color="white" size="60px" />,
   },
   {
-    src: "https://res.cloudinary.com/dqbpjov4y/image/upload/f_auto,q_auto/v1723823301/zumba_bgnfik.jpg",
+    src: "/actividades/zumba.jpg",
     title: "Zumba",
     text: "Entrenamiento cardiovascular al ritmo de la música. Divertido, dinámico y efectivo para quemar calorías mientras entrenás y la pasás bien.",
     icon: <DanceIcon color="white" size="60px" />,
