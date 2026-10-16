@@ -4,12 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "npm run images && next build",
     "start": "next start",
     "lint": "eslint",
     "images": "node scripts/optimize-images.mjs",
-    "predev": "npm run images",
-    "prebuild": "npm run images"
+    "predev": "npm run images"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
